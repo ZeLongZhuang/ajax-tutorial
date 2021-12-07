@@ -13,8 +13,12 @@ This is a simple code demonstrating the power of Ajax. The whole point of Ajax i
 
 ### Installing
 
-`npm install`
+```
+npm install
+```
 
 ### Executing program
 
-`npm run serve`
+```
+npm run serve
+```
