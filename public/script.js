@@ -1,8 +1,5 @@
 $(document).ready(function() {
     $("#changeQuote").on("submit", function(event) {
-
-        // The whole point of Ajax is to send and response request to the server without refreshing the web page.
-        // However, html forms refresh by default and the line below prevents that.
         event.preventDefault();
 
         // CREATE reference to the actual input

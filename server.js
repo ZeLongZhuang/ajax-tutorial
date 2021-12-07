@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyparser = require('body-parser');
-var urlencodedparser = bodyparser.urlencoded({extended:false})  // VERY IMPORTANT
+var urlencodedparser = bodyparser.urlencoded({extended:false});
 
 const app = express();
 
@@ -10,7 +10,7 @@ app.use(bodyparser.json());
 
 app.route('/ajax')
 .get(function(req, res) {
-    res.render('ajax', {quote: "Ego is one thing, brain's another."});
+    res.render('ajax', {quote: "Love and legacy are the sacrifices we make for progress"});
 })
 .post(urlencodedparser, function(req, res) {
     res.send({response: req.body.quote});
